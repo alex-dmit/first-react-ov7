@@ -1,6 +1,3 @@
-import './App.css';
-import List from './components/List'
-import Counter from './components/Counter';
 const posts = [
   {
     id: 1,
@@ -27,15 +24,3 @@ const posts = [
     tags: ['typescript', 'javascript', 'programming']
   },
 ];
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Posts</h1>
-      {/* <Counter /> */}
-      <List list={posts}/>
-    </div>
-  );
-}
-
-export default App;

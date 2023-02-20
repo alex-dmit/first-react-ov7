@@ -1,8 +1,15 @@
-// import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App'
+import App from './App'
 import { useState } from 'react';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
 
 // const jsxElement = <h1>Hello world!</h1>
 
@@ -27,9 +34,4 @@ function HelloComponent(props) {
     </div>
   )
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <HelloComponent name="John" lastname="Smith" />
-);
 
